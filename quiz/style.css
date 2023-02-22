@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, Helvetica, sans-serif;
+}
+
+.tela-inicial{
+	position: absolute;
+	width: 100%;
+	height: 520px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgray;
+}
+
+.nome-jogador{
+	width: 35%;
+}
+
+.container-jogo{
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 1px solid red;
+	margin: 10px auto;
+}
+
+.modal-msg{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #92722F;
+    background-color: #C1D435;
+}
+
+.mensagem{
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.pergunta{
+	width: 75%;
+	height: 50px;
+	padding-top: 10px;
+	color: #fff;
+	text-align: center;
+    border: 2px solid #CFB32B;
+    border-radius: 20px;
+    background-image: radial-gradient(#1B519E, #1B359E);
+}
+
+.qtde-respostas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 30px;
+    border: 1px solid green;
+}
+
+.qtde-corretas{
+	margin-right: 15px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border: 1px solid #1B519E;
+	border-radius: 5px;
+}
+
+.qtde-erradas{
+	margin-right: 15px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border: 1px solid #1B519E;
+	border-radius: 5px;
+}
+
+.nao-respondidas{
+	margin-right: 15px;
+	width: 35px;
+	text-align: center;
+	padding-top: 4px;
+	border: 1px solid #1B519E;
+	border-radius: 5px;
+}
+
+.mostra-contador{
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	text-align: center;
+	color: #fff;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #CFB32B; 
+    border-radius: 50%;
+    background-color: #1C7D22;
+}
+
+.container-opcoes{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	width: 60%;
+	height: 82px;
+}
+
+.upper-line{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	top: 15%;
+	border: 1px solid #CFB32B;
+}
+
+.lower-line{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	bottom: 15%;
+	border: 1px solid #CFB32B;
+}
+
+.opcoes{
+	padding-top: 8px;
+	width: 50%;
+	height: 38px;
+	text-align: center;
+	color: #fff;
+	background-image: radial-gradient(#1B519E, #1B359E);
+	border: 2px solid #CFB32B;
+	border-radius: 20px;
+}
+

@@ -1,0 +1,14 @@
+TELA INICIAL
+  -Nome do jogo
+  -Recebe nome do jogador
+  -Escolhe categoria de perguntas
+  -Botao iniciar
+TELA PRINCIPAL
+  -Mostra pergunta
+  -Mostra opções
+  -Botao verificar resposta
+  -Se resposta correta, variavel CORRETAS recebe numero da pergunta
+   Senão, variavel ERRADAS recebe numero da pergunta 
+  -Mostra pergunta seguinte
+TELA FINAL
+  -Mostra respostas corretas e erradas
