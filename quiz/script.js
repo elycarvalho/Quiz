@@ -19,7 +19,7 @@ let msgFinal = document.querySelector(".msg-final")
 const btnReiniciar = document.querySelector("btn-reiniciar")
 let respondidas = 0
 let perguntaEmJogo = ''
-let tempoContador = 10
+let tempoContador = 15
 
 let bancoPerguntas = [
   {
@@ -129,13 +129,11 @@ function processaPergunta() {
    
     respondidas++
 	} else {
+    alert('teste')
     clearInterval(intervaloContador)
     console.log('fim')
-  }
-
-  
+  }  
 }
-
 
 
 function contador() {
@@ -144,30 +142,30 @@ function contador() {
     mostraContador.innerHTML = tempoContador
     console.log(tempoContador)
   } else {
-    clearInterval(intervaloContador)
+    tempoContador = 15
     naoRespondida++
     qtdeNaoResp.innerHTML = naoRespondida
     processaPergunta()
-
     console.log('fim do tempo')
   }
+
 }
 
-//
 function checaResposta(resposta) {
   if(resposta === perguntaEmJogo.correta) {
     console.log('correto')
     respCorretas++
     qtdeCorretas.innerHTML = respCorretas
-    tempoContador = 10
+    tempoContador = 15
   } else {
     respErradas++
     qtdeErradas.innerHTML = respErradas
-    tempoContador = 10
+    tempoContador = 15
     console.log('errada')
-
   }
-
+  if(respCorretas > 10) {
+    respCorretas = 0
+  }
   processaPergunta()
 }
 
