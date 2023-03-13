@@ -15,6 +15,7 @@ let respCorretas = 0
 let respErradas  = 0
 let naoRespondida = 0
 let mensagem = document.querySelector(".mensagem")
+const telaFinal = document.querySelector(".tela-final")
 let msgFinal = document.querySelector(".msg-final")
 const btnReiniciar = document.querySelector("btn-reiniciar")
 let respondidas = 0
@@ -129,12 +130,12 @@ function processaPergunta() {
    
     respondidas++
 	} else {
-    alert('teste')
+    telaFinal.style.display = 'flex'
+    qtdeErradas.innerHTML = 
     clearInterval(intervaloContador)
     console.log('fim')
   }  
 }
-
 
 function contador() {
   if(tempoContador > 0) {
@@ -167,5 +168,10 @@ function checaResposta(resposta) {
     respCorretas = 0
   }
   processaPergunta()
+}
+
+function reiniciar(){
+  telaFinal.style.display = 'none'
+  iniciar()
 }
 
