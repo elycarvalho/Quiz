@@ -5,19 +5,30 @@
 	font-family: arial, Helvetica, sans-serif;
 }
 
+body{
+	background-image: radial-gradient(#340383, #000);
+}
+
 .tela-inicial{
+	font-size: 1.8rem;
 	position: absolute;
-	width: 100%;
+	margin-left: 10%;
+	width: 80%;
 	height: 520px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
 	background-color: lightgray;
+	border-radius: 20px;
+	z-index: 1;
 }
 
 .nome-jogador{
+	text-align: center;
+	font-size: 1.5rem;
 	width: 35%;
+	height: 45px;
 }
 
 .container-jogo{
@@ -26,7 +37,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	border: 1px solid red;
 	margin: 10px auto;
 }
 
@@ -57,39 +67,23 @@
 }
 
 .qtde-respostas{
+	color: aliceblue;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     width: 70%;
     height: 30px;
-    border: 1px solid green;
 }
 
-.qtde-corretas{
+.qtde-corretas, .qtde-erradas, .nao-respondidas{
+	color: #000;
 	margin-right: 15px;
 	width: 35px;
 	text-align: center;
 	padding-top: 4px;
 	border: 1px solid #1B519E;
 	border-radius: 5px;
-}
-
-.qtde-erradas{
-	margin-right: 15px;
-	width: 35px;
-	text-align: center;
-	padding-top: 4px;
-	border: 1px solid #1B519E;
-	border-radius: 5px;
-}
-
-.nao-respondidas{
-	margin-right: 15px;
-	width: 35px;
-	text-align: center;
-	padding-top: 4px;
-	border: 1px solid #1B519E;
-	border-radius: 5px;
+	background-color: aliceblue;
 }
 
 .mostra-contador{
@@ -117,7 +111,7 @@
 	width: 100%;
 	position: relative;
 	z-index: -1;
-	top: 15%;
+	top: 13%;
 	border: 1px solid #CFB32B;
 }
 
@@ -125,14 +119,14 @@
 	width: 100%;
 	position: relative;
 	z-index: -1;
-	bottom: 15%;
+	bottom: 11%;
 	border: 1px solid #CFB32B;
 }
 
 .opcoes{
 	padding-top: 8px;
 	width: 50%;
-	height: 38px;
+	height: 44px;
 	text-align: center;
 	color: #fff;
 	background-image: radial-gradient(#1B519E, #1B359E);
